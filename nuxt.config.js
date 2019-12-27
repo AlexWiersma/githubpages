@@ -32,11 +32,17 @@ export default {
   /*
   ** Global CSS
   */
-  css: [],
+  css: ['~/assets/css/style.css', '~/assets/css/plugins.css' ],
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [
+    '~/plugins/js/jquery.js',
+    '~/plugins/js/init.js',
+    '~/plugins/js/ie8.js',
+    // '~/plugins/js/modernizr.custom.js',
+    // '~/plugins/js/plugins.js',
+  ],
   /*
   ** Nuxt.js dev-modules
   */
