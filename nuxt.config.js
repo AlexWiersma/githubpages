@@ -37,9 +37,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/js/jquery.js',
-    '~/plugins/js/init.js',
-    '~/plugins/js/ie8.js',
+    // '~/plugins/js/jquery.js',
+    // '~/plugins/js/init.js',
+    // '~/plugins/js/ie8.js',
     // '~/plugins/js/modernizr.custom.js',
     // '~/plugins/js/plugins.js',
   ],

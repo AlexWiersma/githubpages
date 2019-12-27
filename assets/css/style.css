@@ -29,11 +29,11 @@
 
 html {
 	overflow-x: hidden;
-	padding: 0px;
-	margin: 0px
+	padding: 0;
+	margin: 0;
 }
 body{
-	font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 1.8;
 	letter-spacing: 0.5px;
@@ -145,9 +145,9 @@ img.svg{
 .arlo_tm_leftpart_wrap{
 	width: 300px;
 	position: fixed;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
+	top: 0;
+	bottom: 0;
+	left: 0;
 	background-color: #041230;
 	z-index: 100;
 
@@ -193,7 +193,7 @@ img.svg{
 .arlo_tm_leftpart_wrap .menu_list_wrap ul li a{
 	text-decoration: none;
 	color: #fff;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -430,7 +430,7 @@ img.svg{
 	border: 8px solid rgba(255,255,255,.5);
 }
 .arlo_tm_hero_header_wrap .name_holder h3{
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 50px;
@@ -452,12 +452,12 @@ img.svg{
 .arlo_tm_hero_header_wrap .text_typing p{
 	color: #fff;
 	font-size: 24px;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 }
 .arlo_tm_animation_text_word{
 	font-weight: 600;
 	line-height: 1;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 }
 .arlo_tm_about_wrap .arlo_tm_animation_text_word{color: #E3872D;}
 .arlo_tm_arrow_wrap{
@@ -536,7 +536,7 @@ img.svg{
 }
 .arlo_tm_title_holder span{
 	font-size: 16px;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	padding-left: 25px;
 }
 .arlo_tm_about_wrapper_all{
@@ -570,7 +570,7 @@ img.svg{
 }
 .arlo_tm_main_title_holder h3{
 	font-weight: 900;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	color: #041230;
 	font-size: 30px;
 	line-height: 1;
@@ -615,7 +615,7 @@ img.svg{
 }
 .arlo_tm_main_title_holder h3{
 	font-weight: 900;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	color: #041230;
 	font-size: 30px;
 	line-height: 1;
@@ -706,7 +706,7 @@ img.svg{
 	margin-bottom: 20px;
 }
 .arlo_tm_about_wrap .subtitle p{
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	color: #333;
 	font-size: 15px;
 	font-weight: 600;
@@ -738,7 +738,7 @@ img.svg{
 }
 .arlo_tm_about_wrap .about_short_contact_wrap ul li:nth-of-type(2n){clear: right;}
 .about_short_contact_wrap ul li label{
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 13px;
 	color: #000;
@@ -785,7 +785,7 @@ img.svg{
     color: #fff;
     background-color: #E3872D;
     font-weight: 600;
-    font-family: "Montserrat";
+    font-family: 'Open Sans', sans-serif;
     padding: 12px 35px;
     border-radius: 3px;
     display: inline-block;
@@ -893,7 +893,7 @@ img.svg{
 	font-size:13px;
 	font-weight:700;
 	color:#000;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 }
 .arlo_tm_progress span.label .experience{font-size: 12px;font-weight: 600;}
 .arlo_tm_progress span.number{
@@ -901,7 +901,7 @@ img.svg{
 	font-size:13px;
 	color:#000;
 	font-weight: 700;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 }
 .arlo_tm_progress .arlo_tm_bar_bg{
 	background:rgba(0,0,0,.1);
@@ -1030,7 +1030,7 @@ img.svg{
 }
 .arlo_tm_services_wrap .list_wrap ul li .title_service{margin-bottom: 17px;}
 .arlo_tm_services_wrap .list_wrap ul li .title_service h3{
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 600;
     color: #000000;
@@ -1094,7 +1094,7 @@ img.svg{
 }
 .arlo_tm_counter_list li:nth-child(4) .inner:before{display: none;}
 .arlo_tm_counter_list li h3{
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	color: #181a2f;
 	margin-bottom: 10px;
 }
@@ -1104,7 +1104,7 @@ img.svg{
 }
 .arlo_tm_counter_list li .inner > span{
 	color:#666;
-	font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	display: block;
 	font-weight: 600;
@@ -1216,7 +1216,7 @@ img.svg{
   top: 100%;
   left: 0;
   margin-top: -5px;
-  font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 400;
   padding: 5px 15px;
@@ -1301,14 +1301,14 @@ img.svg{
 .arlo_tm_testimonial_wrap .definitions_wrap p{
 	color: #fff;
 	font-size: 27px;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	line-height: 1.4;
 }
 .arlo_tm_testimonial_wrap .name_holder p{
 	color: #fff;
 	font-size: 18px;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 }
 
 .arlo_tm_universal_box_wrap{
@@ -1465,7 +1465,7 @@ img.svg{
 .arlo_tm_news_wrap .date_wrap{margin-bottom: 16px;}
 .arlo_tm_news_wrap .date_wrap p{
 	color: #333;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 }
 .arlo_tm_news_wrap .full_def{display: none;}
@@ -1498,7 +1498,7 @@ img.svg{
 	color: #fff;
 	line-height: 1.4;
 	font-weight: 600;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 }
 .arlo_tm_news_wrap .title_holder h3 a{
 	text-decoration: none;
@@ -1520,7 +1520,7 @@ img.svg{
     color: #fff;
     background-color: #E3872D;
     font-weight: 600;
-    font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
     padding: 12px 35px;
     border-radius: 3px;
     display: inline-block;
@@ -1592,7 +1592,7 @@ img.svg{
 }
 #arlo_tm_popup_blog .date_wrap p{
 	color: #333;
-    font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 #arlo_tm_popup_blog .date_wrap p a{
@@ -1653,7 +1653,7 @@ img.svg{
 #arlo_tm_popup_blog .title_holder h3{
     line-height: 1.4;
     font-weight: 600;
-    font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 }
 #arlo_tm_popup_blog .title_holder h3 a{
     text-decoration: none;
@@ -1688,7 +1688,7 @@ img.svg{
     color: #000;
     font-size: 15px;
     position: relative;
-    font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 
     -webkit-transition: all .3s ease;
@@ -1779,7 +1779,7 @@ img.svg{
 	margin: 0px 0px 15px 0px;
 }
 .arlo_tm_contact_wrap_all .leftbox .short_info_wrap ul li label{
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 13px;
     color: #000;
@@ -1859,7 +1859,7 @@ img.svg{
     color: #fff;
     background-color: #E3872D;
     font-weight: 600;
-    font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
     padding: 12px 35px;
     border-radius: 3px;
     display: inline-block;
@@ -1916,7 +1916,7 @@ img.svg{
 .arlo_tm_footer_wrap p a{
 	text-decoration: none;
 	color: #fff;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
     position: relative;
 }
@@ -2078,7 +2078,7 @@ img.svg{
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
 .arlo_tm_portfolio_single_wrap .details_wrap .name_holder h3{
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 600;
     color: #000000;
@@ -2310,7 +2310,7 @@ img.svg{
 .arlo_tm_mobile_menu_wrap .mob_menu > ul > li a{
 	text-decoration: none;
 	color: #fff;
-	font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	font-size: 19px;
 }
