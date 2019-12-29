@@ -1121,7 +1121,8 @@ img.svg{
 	clear: both;
 	float: left;
 	padding-bottom: 70px;
-	background-color: #fff;
+	/*background-color: #fff;*/
+  background-color: #f6f7fd;
 
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
