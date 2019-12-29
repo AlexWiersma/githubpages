@@ -2,20 +2,9 @@
 
   <!-- WRAPPER ALL -->
   <div class="arlo_tm_wrapper_all">
-
-    <!--    <div id="arlo_tm_popup_blog">-->
-    <!--      <div class="container">-->
-    <!--        <div class="inner_popup scrollable"></div>-->
-    <!--      </div>-->
-    <!--      <span class="close"><a href="#"></a></span>-->
-    <!--    </div>-->
-
     <!-- MOBILE MENU -->
     <div class="arlo_tm_mobile_header_wrap">
       <div class="main_wrap">
-        <div class="logo">
-          <img src="img/logo/mobile_logo.png" alt="" />
-        </div>
         <div v-on:click="toggleMobileMenu($event)" class="arlo_tm_trigger">
           <div class="hamburger hamburger--collapse-r">
             <div class="hamburger-box">
@@ -29,9 +18,7 @@
           <ul class="anchor_nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -43,21 +30,14 @@
     <div class="arlo_tm_content">
 
       <!-- LEFTPART -->
-      <!--      <div class="arlo_tm_leftpart_wrap opened">-->
-      <!--      <div class="arlo_tm_leftpart_wrap hide">-->
-      <!--      <div class="arlo_tm_leftpart_wrap">-->
       <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_leftpart_wrap')]">
         <div class="leftpart_inner">
-          <div class="logo_wrap">
-            <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
-          </div>
+          <div class="logo_wrap"></div>
           <div class="menu_list_wrap">
             <ul class="anchor_nav">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#news">News</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -97,15 +77,12 @@
                       <img src="img/hero/new.jpg" alt="" />
                     </div>
                     <div class="name_holder">
-                      <h3>Alan <span>Michaelis</span></h3>
+                      <h3>Alex Wiersma</h3>
                     </div>
                     <div class="text_typing">
-                      <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+                      <p>I'm a Senior Mobile App Developer</p>
                     </div>
                   </div>
-                </div>
-                <div class="arlo_tm_arrow_wrap bounce anchor">
-                  <a href="#about"><i class="xcon-angle-double-down"></i></a>
                 </div>
               </div>
             </div>
@@ -117,29 +94,28 @@
               <div class="container">
                 <div class="arlo_tm_title_holder">
                   <h3>About Me</h3>
-                  <span>Main informations about me</span>
                 </div>
                 <div class="arlo_tm_about_wrap">
                   <div class="author_wrap">
                     <div class="leftbox">
-                      <div class="about_image_wrap parallax" data-relative-input="true">
-                        <div class="image layer" data-depth="0.1">
-                          <img src="img/about/550x640.jpg" alt="" />
-                          <div class="inner" data-img-url="img/about/1.jpg"></div>
-                        </div>
-                        <div class="border layer" data-depth="0.2">
-                          <img src="img/about/550x640.jpg" alt="" />
-                          <div class="inner"></div>
-                        </div>
-                      </div>
+<!--                      <div class="about_image_wrap parallax" data-relative-input="true">-->
+<!--                        <div class="image layer" data-depth="0.1">-->
+<!--                          <img src="img/about/550x640.jpg" alt="" />-->
+<!--                          <div class="inner" data-img-url="img/about/1.jpg"></div>-->
+<!--                        </div>-->
+<!--                        <div class="border layer" data-depth="0.2">-->
+<!--                          <img src="img/about/550x640.jpg" alt="" />-->
+<!--                          <div class="inner"></div>-->
+<!--                        </div>-->
+<!--                      </div>-->
 
                     </div>
                     <div class="rightbox">
                       <div class="arlo_tm_mini_title_holder">
-                        <h4>I'm Alan Michaelis and <span class="arlo_tm_animation_text_word"></span></h4>
+                        <h4>I'm Alex Wiersma</h4>
                       </div>
                       <div class="definition">
-                        <p>Hi! My name is <strong>Alan Michaelis</strong>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
+                        <p> asdasd </p>
                       </div>
                       <div class="about_short_contact_wrap">
                         <ul>
@@ -177,9 +153,6 @@
                       </div>
                       <div class="buttons_wrap">
                         <ul>
-                          <li>
-                            <a href="index.html"><span>Download CV</span></a>
-                          </li>
                           <li class="anchor">
                             <a href="#contact"><span>Send Message</span></a>
                           </li>
