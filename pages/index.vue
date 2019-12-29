@@ -3,12 +3,12 @@
   <!-- WRAPPER ALL -->
   <div class="arlo_tm_wrapper_all">
 
-    <div id="arlo_tm_popup_blog">
-      <div class="container">
-        <div class="inner_popup scrollable"></div>
-      </div>
-      <span class="close"><a href="#"></a></span>
-    </div>
+    <!--    <div id="arlo_tm_popup_blog">-->
+    <!--      <div class="container">-->
+    <!--        <div class="inner_popup scrollable"></div>-->
+    <!--      </div>-->
+    <!--      <span class="close"><a href="#"></a></span>-->
+    <!--    </div>-->
 
     <!-- MOBILE MENU -->
     <div class="arlo_tm_mobile_header_wrap">
@@ -16,7 +16,7 @@
         <div class="logo">
           <img src="img/logo/mobile_logo.png" alt="" />
         </div>
-        <div class="arlo_tm_trigger">
+        <div v-on:click="toggleMobileMenu($event)" class="arlo_tm_trigger">
           <div class="hamburger hamburger--collapse-r">
             <div class="hamburger-box">
               <div class="hamburger-inner"></div>
@@ -24,7 +24,7 @@
           </div>
         </div>
       </div>
-      <div class="arlo_tm_mobile_menu_wrap">
+      <div class="arlo_tm_mobile_menu_wrap" v-bind:style="{ display: mobileMenuIsOpen? 'block' : 'none' }">
         <div class="mob_menu">
           <ul class="anchor_nav">
             <li><a href="#home">Home</a></li>
@@ -43,7 +43,10 @@
     <div class="arlo_tm_content">
 
       <!-- LEFTPART -->
-      <div class="arlo_tm_leftpart_wrap">
+      <!--      <div class="arlo_tm_leftpart_wrap opened">-->
+      <!--      <div class="arlo_tm_leftpart_wrap hide">-->
+      <!--      <div class="arlo_tm_leftpart_wrap">-->
+      <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_leftpart_wrap')]">
         <div class="leftpart_inner">
           <div class="logo_wrap">
             <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
@@ -69,13 +72,17 @@
               </ul>
             </div>
           </div>
-          <a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>
+          <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_resize')]">
+            <a v-on:click="openOrCloseSideMenu($event)" href="#">
+              <i v-bind:class="[openAndHideSideMenuElement('xcon-angle-left')]"></i>
+            </a>
+          </div>
         </div>
       </div>
       <!-- /LEFTPART -->
 
       <!-- RIGHTPART -->
-      <div class="arlo_tm_rightpart">
+      <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_rightpart')]">
         <div class="rightpart_inner">
           <div class="arlo_tm_section" id="home">
             <div class="arlo_tm_hero_header_wrap">
@@ -685,13 +692,71 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+  import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
+  const sideMenuVisibleType = Object.freeze({"open":1, "close":2, "hidden":3});
+  const maxWidth = 1040;
+  let windowWidth = 0;
+  let prevSidemenuIsOpenState = sideMenuVisibleType.close;
+
+  export default {
+    components: {
+      Logo
+    },
+    data: function () {
+      return {
+        mobileMenuIsOpen: false,
+        sidemenuIsOpen: sideMenuVisibleType.open
+      }
+    },
+    mounted() {
+      this.$nextTick(() => {
+        window.addEventListener('resize', this.onResize);
+        this.onResize();
+      });
+    },
+    beforeDestroy() {
+      window.removeEventListener('resize', this.onResize);
+    },
+
+    methods: {
+      onResize: function() {
+        this.windowWidth = window.innerWidth;
+        if (this.windowWidth < maxWidth && this.sidemenuIsOpen !== sideMenuVisibleType.hidden) {
+          this.prevSidemenuIsOpenState = this.sidemenuIsOpen;
+          this.sidemenuIsOpen = sideMenuVisibleType.hidden;
+        } else if (this.windowWidth > maxWidth && this.sidemenuIsOpen === sideMenuVisibleType.hidden)  {
+          this.sidemenuIsOpen = this.prevSidemenuIsOpenState
+        }
+      },
+      openOrCloseSideMenu: async function (event) {
+        switch (this.sidemenuIsOpen) {
+          case sideMenuVisibleType.open:
+            this.sidemenuIsOpen = sideMenuVisibleType.close;
+            break;
+          case sideMenuVisibleType.close:
+            this.sidemenuIsOpen = sideMenuVisibleType.open;
+            break;
+          case sideMenuVisibleType.hidden:
+            break;
+        }
+      },
+      openAndHideSideMenuElement: function(currentValue) {
+        if (this.sidemenuIsOpen === sideMenuVisibleType.hidden) {
+          if (currentValue === 'arlo_tm_rightpart') {
+            return currentValue + " " + "full"
+          }
+          return currentValue + " " + "hide";
+        }
+
+        let openValue = this.sidemenuIsOpen === sideMenuVisibleType.open ? "opened" : "";
+        return currentValue + " " + openValue;
+      },
+      toggleMobileMenu: function (event) {
+        this.mobileMenuIsOpen = !this.mobileMenuIsOpen
+      }
+    }
   }
-}
 </script>
 
 <style>
