@@ -2,21 +2,10 @@
 
   <!-- WRAPPER ALL -->
   <div class="arlo_tm_wrapper_all">
-
-    <div id="arlo_tm_popup_blog">
-      <div class="container">
-        <div class="inner_popup scrollable"></div>
-      </div>
-      <span class="close"><a href="#"></a></span>
-    </div>
-
     <!-- MOBILE MENU -->
     <div class="arlo_tm_mobile_header_wrap">
       <div class="main_wrap">
-        <div class="logo">
-          <img src="img/logo/mobile_logo.png" alt="" />
-        </div>
-        <div class="arlo_tm_trigger">
+        <div v-on:click="toggleMobileMenu($event)" class="arlo_tm_trigger">
           <div class="hamburger hamburger--collapse-r">
             <div class="hamburger-box">
               <div class="hamburger-inner"></div>
@@ -24,14 +13,12 @@
           </div>
         </div>
       </div>
-      <div class="arlo_tm_mobile_menu_wrap">
+      <div class="arlo_tm_mobile_menu_wrap" v-bind:style="{ display: mobileMenuIsOpen? 'block' : 'none' }">
         <div class="mob_menu">
           <ul class="anchor_nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -43,18 +30,14 @@
     <div class="arlo_tm_content">
 
       <!-- LEFTPART -->
-      <div class="arlo_tm_leftpart_wrap">
+      <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_leftpart_wrap')]">
         <div class="leftpart_inner">
-          <div class="logo_wrap">
-            <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
-          </div>
+          <div class="logo_wrap"></div>
           <div class="menu_list_wrap">
             <ul class="anchor_nav">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#news">News</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -69,13 +52,17 @@
               </ul>
             </div>
           </div>
-          <a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>
+          <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_resize')]">
+            <a v-on:click="openOrCloseSideMenu($event)" href="#">
+              <i v-bind:class="[openAndHideSideMenuElement('xcon-angle-left')]"></i>
+            </a>
+          </div>
         </div>
       </div>
       <!-- /LEFTPART -->
 
       <!-- RIGHTPART -->
-      <div class="arlo_tm_rightpart">
+      <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_rightpart')]">
         <div class="rightpart_inner">
           <div class="arlo_tm_section" id="home">
             <div class="arlo_tm_hero_header_wrap">
@@ -90,15 +77,12 @@
                       <img src="img/hero/new.jpg" alt="" />
                     </div>
                     <div class="name_holder">
-                      <h3>Alan <span>Michaelis</span></h3>
+                      <h3>Alex Wiersma</h3>
                     </div>
                     <div class="text_typing">
-                      <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+                      <p>I'm a Senior Mobile App Developer</p>
                     </div>
                   </div>
-                </div>
-                <div class="arlo_tm_arrow_wrap bounce anchor">
-                  <a href="#about"><i class="xcon-angle-double-down"></i></a>
                 </div>
               </div>
             </div>
@@ -110,29 +94,28 @@
               <div class="container">
                 <div class="arlo_tm_title_holder">
                   <h3>About Me</h3>
-                  <span>Main informations about me</span>
                 </div>
                 <div class="arlo_tm_about_wrap">
                   <div class="author_wrap">
                     <div class="leftbox">
-                      <div class="about_image_wrap parallax" data-relative-input="true">
-                        <div class="image layer" data-depth="0.1">
-                          <img src="img/about/550x640.jpg" alt="" />
-                          <div class="inner" data-img-url="img/about/1.jpg"></div>
-                        </div>
-                        <div class="border layer" data-depth="0.2">
-                          <img src="img/about/550x640.jpg" alt="" />
-                          <div class="inner"></div>
-                        </div>
-                      </div>
+<!--                      <div class="about_image_wrap parallax" data-relative-input="true">-->
+<!--                        <div class="image layer" data-depth="0.1">-->
+<!--                          <img src="img/about/550x640.jpg" alt="" />-->
+<!--                          <div class="inner" data-img-url="img/about/1.jpg"></div>-->
+<!--                        </div>-->
+<!--                        <div class="border layer" data-depth="0.2">-->
+<!--                          <img src="img/about/550x640.jpg" alt="" />-->
+<!--                          <div class="inner"></div>-->
+<!--                        </div>-->
+<!--                      </div>-->
 
                     </div>
                     <div class="rightbox">
                       <div class="arlo_tm_mini_title_holder">
-                        <h4>I'm Alan Michaelis and <span class="arlo_tm_animation_text_word"></span></h4>
+                        <h4>I'm Alex Wiersma</h4>
                       </div>
                       <div class="definition">
-                        <p>Hi! My name is <strong>Alan Michaelis</strong>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
+                        <p> asdasd </p>
                       </div>
                       <div class="about_short_contact_wrap">
                         <ul>
@@ -170,9 +153,6 @@
                       </div>
                       <div class="buttons_wrap">
                         <ul>
-                          <li>
-                            <a href="index.html"><span>Download CV</span></a>
-                          </li>
                           <li class="anchor">
                             <a href="#contact"><span>Send Message</span></a>
                           </li>
@@ -685,13 +665,71 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+  import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
+  const sideMenuVisibleType = Object.freeze({"open":1, "close":2, "hidden":3});
+  const maxWidth = 1040;
+  let windowWidth = 0;
+  let prevSidemenuIsOpenState = sideMenuVisibleType.close;
+
+  export default {
+    components: {
+      Logo
+    },
+    data: function () {
+      return {
+        mobileMenuIsOpen: false,
+        sidemenuIsOpen: sideMenuVisibleType.open
+      }
+    },
+    mounted() {
+      this.$nextTick(() => {
+        window.addEventListener('resize', this.onResize);
+        this.onResize();
+      });
+    },
+    beforeDestroy() {
+      window.removeEventListener('resize', this.onResize);
+    },
+
+    methods: {
+      onResize: function() {
+        this.windowWidth = window.innerWidth;
+        if (this.windowWidth < maxWidth && this.sidemenuIsOpen !== sideMenuVisibleType.hidden) {
+          this.prevSidemenuIsOpenState = this.sidemenuIsOpen;
+          this.sidemenuIsOpen = sideMenuVisibleType.hidden;
+        } else if (this.windowWidth > maxWidth && this.sidemenuIsOpen === sideMenuVisibleType.hidden)  {
+          this.sidemenuIsOpen = this.prevSidemenuIsOpenState
+        }
+      },
+      openOrCloseSideMenu: async function (event) {
+        switch (this.sidemenuIsOpen) {
+          case sideMenuVisibleType.open:
+            this.sidemenuIsOpen = sideMenuVisibleType.close;
+            break;
+          case sideMenuVisibleType.close:
+            this.sidemenuIsOpen = sideMenuVisibleType.open;
+            break;
+          case sideMenuVisibleType.hidden:
+            break;
+        }
+      },
+      openAndHideSideMenuElement: function(currentValue) {
+        if (this.sidemenuIsOpen === sideMenuVisibleType.hidden) {
+          if (currentValue === 'arlo_tm_rightpart') {
+            return currentValue + " " + "full"
+          }
+          return currentValue + " " + "hide";
+        }
+
+        let openValue = this.sidemenuIsOpen === sideMenuVisibleType.open ? "opened" : "";
+        return currentValue + " " + openValue;
+      },
+      toggleMobileMenu: function (event) {
+        this.mobileMenuIsOpen = !this.mobileMenuIsOpen
+      }
+    }
   }
-}
 </script>
 
 <style>
