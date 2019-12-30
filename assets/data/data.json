@@ -1,0 +1,79 @@
+{
+  "person": {
+    "first_name": "Alex",
+    "last_name": "Wiersma",
+    "full_name": "Alex Wiersma",
+    "avatar": "images/avatar/avatar_circle.png",
+    "about": "I'm a software developer specialised in multimedia design and Mobile App Development (iOS).\n\nWith over 10 years of experience, I have created software for different companies like: EA, McDonald’s Netherlands, DDB Tribal, Medtronic, KPN, KRO, Sanoma and many others.\nWhen working on these projects I had different roles ranging from Game Designer, Mobile App Developer, Consultant and Team Lead.\n",
+    "about_image": "images/avatar/avatar_jungle.jpg",
+    "skills": [
+      "iOS",
+      "Project Management",
+      "Technology",
+      "Business / Entrepreneurship",
+      "Photography"
+    ],
+    "portfolio": [
+      {
+        "id": 1,
+        "project": "RTLZ",
+        "client": "RTL Nederland",
+        "employer": "Egeniq",
+        "role": "Senior iOS Developer",
+        "period": "2019",
+        "description": "Helped RTL Nederland with a rewrite of the RTLZ app, the RTLZ app is a popular business news app with over 100k users.",
+        "technology": "iOS SDK, ReactiveX",
+        "image": "images/portfolio/rtlz_portfolio.jpg"
+      }
+      ,{
+      "id": 2,
+      "project": "EasyGrow",
+      "client": "Elements Interactive",
+      "employer": "Elements Interactive",
+      "role": "Intern Mentor, Lead iOS Developer",
+      "period": "2018",
+      "description": "The Easygrow app is an product which allows users to monitor their crops in their greenhouse or farm. During this project I helped out with the development and guided an intern with developing the app",
+      "technology": "iOS SDK, IoT",
+        "image": "images/portfolio/easygrow_portfolio.jpg"
+    },{
+      "id": 3,
+      "project": "Nederlandse McDonald's App",
+      "client": "McDonald's Netherlands",
+      "employer": "Elements Interactive",
+      "role": "Lead Developer, Consultant, iOS Developer, Android Developer",
+      "period": "2013 – 2018",
+      "description": "I helped with the development of the McDonald's app, during this project I helped out with software architecture, guided a team and assisted with iOS Development and Android Development",
+      "technology": "iOS SDK, Android SDK, IoT / Beacons",
+        "image": "images/portfolio/mcdonalds_portfolio.jpg"
+    }, {
+      "id": 4,
+      "project": "Fietsmodus App",
+      "client": "Rijksoverheid",
+      "employer": "Elements Interactive",
+      "role": "Lead Developer, iOS Developer",
+      "period": "2017",
+      "description": "During this project, the Dutch government wanted to promote the dangers of using a smartphone when cycling towards children. The Fietsmodus app encouraged children not to use their phone when on a bike.",
+      "technology": "iOS SDK",
+        "image": "images/portfolio/fietsmodus_portfolio.jpg"
+    }
+
+    ],
+    "portfolio_misc": [
+      {
+        "employer": "Elements Interactive",
+        "projects": [
+          "KRO, Keuringsdienst van Waarde (2015)",
+          "KRO, 4JIM App (2015)",
+          "KRO, Kindertijd app (2013)",
+          "KPN, Mijn Telfort (2013)",
+          "Corio, Alexandrium / MareMagnum (2012)",
+          "EyeOpen, Eyewally (2012)",
+          "Medtronic (2012)",
+          "Sanoma, NuSport (2011)"
+        ]
+      }
+    ]
+  }
+
+
+}
