@@ -11,7 +11,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Alex Wiersma | Mobile App Developer',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -32,11 +32,17 @@ export default {
   /*
   ** Global CSS
   */
-  css: [],
+  css: ['~/assets/css/style.css', '~/assets/css/plugins.css' ],
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [
+    // '~/plugins/js/jquery.js',
+    // '~/plugins/js/init.js',
+    // '~/plugins/js/ie8.js',
+    // '~/plugins/js/modernizr.custom.js',
+    // '~/plugins/js/plugins.js',
+  ],
   /*
   ** Nuxt.js dev-modules
   */
@@ -47,6 +53,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    // 'vue-recaptcha',
   ],
   /*
   ** Build configuration
