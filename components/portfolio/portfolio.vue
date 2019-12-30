@@ -45,7 +45,7 @@
             <div class="arlo_tm_about_wrap author_wrap">
               <div class="leftbox">
                 <div class="arlo_tm_mini_title_holder">
-                  <h4>Other iOS apps made an iOS Developer include:</h4>
+                  <h4>Other iOS apps made as an iOS Developer include:</h4>
                 </div>
               </div>
               <div class="rightbox">
