@@ -19,7 +19,6 @@
               </div>
               <div class="definition">
                 <p> {{ description }} </p>
-
                 <div class="about_short_contact_wrap" style="margin-top: 24px">
                   <ul>
                     <li v-for="skill in skills">

@@ -23,7 +23,7 @@
         "period": "2019",
         "description": "Helped RTL Nederland with a rewrite of the RTLZ app, the RTLZ app is a popular business news app with over 100k users.",
         "technology": "iOS SDK, ReactiveX",
-        "images": []
+        "image": "images/portfolio/rtlz_portfolio.jpg"
       }
       ,{
       "id": 2,
@@ -34,7 +34,7 @@
       "period": "2018",
       "description": "The Easygrow app is an product which allows users to monitor their crops in their greenhouse or farm. During this project I helped out with the development and guided an intern with developing the app",
       "technology": "iOS SDK, IoT",
-      "images": []
+        "image": "images/portfolio/easygrow_portfolio.jpg"
     },{
       "id": 3,
       "project": "Nederlandse McDonald's App",
@@ -44,7 +44,7 @@
       "period": "2013 – 2018",
       "description": "I helped with the development of the McDonald's app, during this project I helped out with software architecture, guided a team and assisted with iOS Development and Android Development",
       "technology": "iOS SDK, Android SDK, IoT / Beacons",
-      "images": []
+        "image": "images/portfolio/mcdonalds_portfolio.jpg"
     }, {
       "id": 4,
       "project": "Fietsmodus App",
@@ -54,7 +54,7 @@
       "period": "2017",
       "description": "During this project, the Dutch government wanted to promote the dangers of using a smartphone when cycling towards children. The Fietsmodus app encouraged children not to use their phone when on a bike.",
       "technology": "iOS SDK",
-      "images": []
+        "image": "images/portfolio/fietsmodus_portfolio.jpg"
     }
 
     ],
