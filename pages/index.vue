@@ -2,39 +2,41 @@
 
   <!-- WRAPPER ALL -->
   <div class="arlo_tm_wrapper_all">
-  <mobile_menu/>
+<!-- Note: Disabled menu due to font issues -->
+<!--  <mobile_menu/>-->
 
     <!-- CONTENT -->
     <div class="arlo_tm_content">
 
       <!-- LEFTPART -->
-      <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_leftpart_wrap')]">
-        <div class="leftpart_inner">
-          <div class="logo_wrap"></div>
-          <div class="menu_list_wrap">
-            <ul class="anchor_nav">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="leftpart_bottom">
-            <div class="social_wrap">
-              <ul>
-                <li><a href="https://www.linkedin.com/in/awiersma/"><i class="xcon-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/alex.wiersma/"><i class="xcon-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_resize')]">
-            <a v-on:click="openOrCloseSideMenu($event)" href="#">
-              <i v-bind:class="[openAndHideSideMenuElement('xcon-angle-left')]"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- /LEFTPART -->
+      <!-- Note:  Disabled menu due to font issues -->
+<!--      <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_leftpart_wrap')]">-->
+<!--        <div class="leftpart_inner">-->
+<!--          <div class="logo_wrap"></div>-->
+<!--          <div class="menu_list_wrap">-->
+<!--            <ul class="anchor_nav">-->
+<!--              <li><a href="#home">Home</a></li>-->
+<!--              <li><a href="#about">About</a></li>-->
+<!--              <li><a href="#portfolio">Portfolio</a></li>-->
+<!--              <li><a href="#contact">Contact</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--          <div class="leftpart_bottom">-->
+<!--            <div class="social_wrap">-->
+<!--              <ul>-->
+<!--                <li><a href="https://www.linkedin.com/in/awiersma/"><i class="xcon-linkedin"></i></a></li>-->
+<!--                <li><a href="https://www.instagram.com/alex.wiersma/"><i class="xcon-instagram"></i></a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_resize')]">-->
+<!--            <a v-on:click="openOrCloseSideMenu($event)" href="#">-->
+<!--              <i v-bind:class="[openAndHideSideMenuElement('xcon-angle-left')]"></i>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /LEFTPART &ndash;&gt;-->
 
       <!-- RIGHTPART -->
       <div v-bind:class="[openAndHideSideMenuElement('arlo_tm_rightpart')]">
